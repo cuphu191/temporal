@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporal</title>
+</head>
+<!--https://startbootstrap.com/previews/freelancer--> 
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header.pertama{
+        background-color: black ;
+        padding: 20px;
+        margin: 0px;
+    }
+    ul li{
+        display: inline;
+        color: wheat;
+        margin: 5px;
+    }
+    .besar{
+        font-size: 30px;
+    }
+    .kanan{
+        position: relative;
+        left: 65%;
+        /* 750 */
+        font-size: large;
+        border-radius: 5px;
+        background-color: rgb(44, 47, 51);
+    }
+    .pertama a{
+        text-decoration: none;
+        color: white;
+    }
+    .kedua{
+        margin: 0px;
+        padding:100px;
+        background-color: rgb(160, 154, 154);
+        text-align: center;
+        color: white;
+        font-family: 'Times New Roman';
+    }
+    .kedua img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 50px;
+        border: 10px solid black;
+    }
+    .kedua p{
+        font-size: 80px;
+        color:  black;
+    }
+    h4{
+        color:  rgb(46, 45, 51);
+        font-size: 30px;
+    }
+    .section1{
+        text-align: center;
+        padding: 150px;
+        font-size: xx-large;
+        color: white;
+        background-color:rgb(0, 0, 0) ;
+    }
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .item1 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 5%;
+        border: 15px solid white;
+    }
+    .item2 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 5%;
+        border: 15px solid white;
+    }
+    .section1 div{
+        margin-top: 50px;
+    }
+    .section2{
+        text-align: center;
+        padding: 150px;
+        font-size: xx-large;
+        color: black;
+        background-color:rgb(160, 154, 154);
+    }
+    .section2 h1{
+       font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .flex1{
+        display: flex;
+        gap: 20px;
+        text-align: left;
+        margin: 20px auto;
+        justify-content: center;
+        font-size: 20px;
+        padding-left: 200px;
+        padding-right: 100px;
+        margin-bottom: 150px;
+    }
+    .section3{
+        text-align: center;
+        padding: 150px;
+        font-size: xx-large;
+        color: white;
+        background-color:rgb(0, 0, 0) ;
+    }
+    .section3 h1{
+        margin-bottom: 100px;
+    }
+    .section3 img{
+        width: 300px;
+    }
+    .member{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+</style>
+<body>
+    <header class="pertama">
+        <ul>
+            <li class="besar">TEMPORAL</li>
+            <li class="green kanan"><a href="#portofolio">Portofolio</a></li>
+            <li class="kanan"><a href="#about">About</a></li>
+            <li class="kanan"><a href="#member">Member</a></li>
+            <li class="kanan"><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <header class="kedua">
+        <img src="gambar3.jpg" alt="Temporal">
+        <p>Temporal</p>
+        <h4>Music-band</h4>
+    </header>
+    <section class="section1">
+        <h1 id="portofolio">PORTOFOLIO</h1>
+        <div class="grid1">
+            <div class="item1">
+                <img src="gambar4.jpg" alt="">
+                <h1>text</h1>
+            </div>
+            <div class="item1">
+                <img src="gambar1.jpg" alt="">
+                <h1>text</h1>
+            </div>
+            <div class="item1">
+                <img src="gambar5.jpg" alt="">
+                <h1>text</h1>
+            </div>
+        </div>
+        <div class="grid2">
+            <div class="item2">
+                <img src="gambar6.jpg" alt="">
+                <h1>text</h1>
+            </div>
+            <div class="item2">
+                <img src="gambar7.jpg" alt="">
+                <h1>text</h1>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <h1 id="about">ABOUT</h1>
+        <div class="flex1">
+            <p>Temporal is a band from Sutomo 1 Medan who often attends various events and plays very beautiful music</p>
+            <p>Temporal can play various types of songs. You can request what song you want to hear and the temporal group will play it </p>
+        </div>
+    </section>
+    <section class="section3">
+        <h1 id="member">MEMBER</h1>
+        <div class="member">
+            <div class="item3">
+                <img src="avatar.svg" alt="">
+                <p>Glenrico (Pianist)</p>
+            </div>
+             <div class="item3">
+                <img src="avatar.svg" alt="">
+                <p>Bintang (Gitaris)</p>
+             </div>
+        </div>
+        <div class="member">
+            <div class="item3">
+                <img src="avatar.svg" alt="">
+                <p>Juan (Bassist)</p>
+            </div>
+             <div class="item3">
+                <img src="avatar.svg" alt="">
+                <p>Abel (Drummer)</p>
+             </div>
+        </div>
+        <div>
+        <img src="avatar.svg" alt="">
+        <p>Russel (Vocalist)</p>
+        </div>
+    </section>
+</body>
+</html>
