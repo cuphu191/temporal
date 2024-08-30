@@ -7,7 +7,7 @@
 </head>
 <!--https://startbootstrap.com/previews/freelancer--> 
 <style>
-   @media (max-width: 1024px) {
+   media (max-width: 1024px) {
     body {
         display: none;
     }
@@ -134,13 +134,25 @@
         grid-template-columns: 1fr 1fr;
     }
 </style>
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+        
+    </script>
 <body>
     <header class="pertama">
         <ul>
             <li class="besar">TEMPORAL</li>
-            <li class="green kanan"><a href="#portofolio">Portofolio</a></li>
-            <li class="kanan"><a href="#about">About</a></li>
-            <li class="kanan"><a href="#member">Member</a></li>
+            <li class="green kanan"><a href="#portofolio" class="scroll-link">Portofolio</a></li>
+            <li class="kanan"><a href="#about" class="scroll-link">About</a></li>
+            <li class="kanan"><a href="#member" class="scroll-link" >Member</a></li>
 <!--             <li class="kanan"><a href="#contact">Contact</a></li> -->
         </ul>
     </header>
